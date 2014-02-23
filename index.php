@@ -8,6 +8,7 @@
 <html>
 <head>
 	<title>Oefening PHP op POST en GET</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
 	<h1>Regestratie</h1>
@@ -18,6 +19,5 @@
 		<p>Wachtwoord: 	   <input type="password" name="password"  /></p>
 		<input type="submit">
 	</form>
-
 </body>
 </html>
