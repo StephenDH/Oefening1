@@ -18,6 +18,5 @@
 		<p>Wachtwoord: 	   <input type="password" name="password"  /></p>
 		<input type="submit">
 	</form>
-
 </body>
 </html>
