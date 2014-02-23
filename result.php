@@ -4,6 +4,7 @@
 <html>
 <head>
 	<title>Resultaat</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
 	<h1>Welkom <?php echo $_POST["real_name"] ?></h1>
