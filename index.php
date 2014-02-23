@@ -11,13 +11,21 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
-	<h1>Regestratie</h1>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h1 class="panel-title">Regestratie</h1>
+		</div>
 
-	<form action="result.php" method="post">
-		<p>Naam: 		   <input type="text" 	  name="real_name" /></p>
-		<p>Gebruikersnaam: <input type="text" 	  name="user_name" /></p>
-		<p>Wachtwoord: 	   <input type="password" name="password"  /></p>
-		<input type="submit">
-	</form>
+		<div class="panel-body">
+			<form action="result.php" method="post">
+				<p>Naam: 		   <input type="text" 	  name="real_name" class="form-control"/></p>
+				<p>Gebruikersnaam: <input type="text" 	  name="user_name" class="form-control"/></p>
+				<p>Wachtwoord: 	   <input type="password" name="password"  class="form-control"/></p>
+				<input type="submit" class="btn btn-default">
+			</form>			
+		</div>
+	</div>
+
+
 </body>
 </html>
