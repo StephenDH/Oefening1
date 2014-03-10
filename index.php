@@ -1,3 +1,23 @@
+<?php
+	$user_name ="";
+	if (isset($_POST['user_name'])) {
+		$user_name = $_POST['user_name'];
+	}
+
+	$real_name ="";
+	if (isset($_POST['real_name'])) {
+		$real_name = $_POST['real_name'];
+	}
+
+	$password ="";
+	if (isset($_POST['password'])) {
+		$password = $_POST['password'];
+	}
+
+	$showResult = false;
+	$showResult = !(empty($user_name) && empty($real_name) && empty($password));
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,13 +25,13 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
-	<?php if(isset($_POST['real_name']) && isset($_POST['user_name']) && isset($_POST['password'])) : ?>
+	<?php if($showResult) { ?>
 			<div class="jumbotron">
-				<h1>Welkom <?php echo $_POST["real_name"] ?></h1>
-				<p>Je gebruikersnaam is <?php echo $_POST["user_name"] ?></p>
+				<h1>Welkom <?php echo $real_name ?></h1>
+				<p>Je gebruikersnaam is <?php echo $user_name ?></p>
 			</div>
 
-	<?php else : ?>	
+	<?php }else{ ?>	
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h1 class="panel-title">Registratie</h1>
@@ -26,6 +46,6 @@
 					</form>			
 				</div>
 			</div>
-	<?php endif; ?>
+	<?php } ?>
 </body>
 </html>
