@@ -1,7 +1,5 @@
 <?php
-	$real_name = $_POST['real_name'];
-	$user_name = $_POST['user_name'];
-	$password  = $_POST['password' ];
+
 ?>
 
 <!DOCTYPE html>
