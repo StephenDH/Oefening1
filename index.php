@@ -26,25 +26,22 @@
 </head>
 <body>
 	<?php if($showResult) { ?>
-			<div class="jumbotron">
-				<h1>Welkom <?php echo $real_name ?></h1>
-				<p>Je gebruikersnaam is <?php echo $user_name ?></p>
-			</div>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<div class="jumbotron">
+			<h1>Welkom <?php echo $real_name ?></h1>
+			<p>Je gebruikersnaam is <?php echo $user_name ?></p>
+		</div>
 
 	<?php }else{ ?>	
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h1 class="panel-title">Registratie</h1>
-				</div>
-
-				<div class="panel-body">
-					<form method="post">
-						<p>Naam: 		   <input type="text" 	  name="real_name" class="form-control"/></p>
-						<p>Gebruikersnaam: <input type="text" 	  name="user_name" class="form-control"/></p>
-						<p>Wachtwoord: 	   <input type="password" name="password"  class="form-control"/></p>
-						<input type="submit" class="btn btn-default">
-					</form>			
-				</div>
+		<link rel="stylesheet" type="text/css" href="css/signup.css">
+			<div class="container">
+				<form class="form-signin" method="post">
+					<h2 class="form-signin-heading">Please sign in</h2>
+					<input type="text" 	  name="real_name" class="form-control" placeholder="Name"/>
+					<input type="text" 	  name="user_name" class="form-control" placeholder="Username"/>
+					<input type="password" name="password"  class="form-control" placeholder="Password"/>
+					<button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+				</form>			
 			</div>
 	<?php } ?>
 </body>
